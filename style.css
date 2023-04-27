@@ -88,7 +88,7 @@
   background-image: url("assets/background.png");
   background-position: fixed; /* Center the image */
   background-repeat: repeat; /* Do not repeat the image */
-  background-size: 100%;
+  background-size: contain;
   background-attachment: fixed;
 }
 

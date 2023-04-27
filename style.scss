@@ -1,0 +1,400 @@
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('font/SansitaSwashed-ExtraBold.woff2') format('woff2'),
+        url('font/SansitaSwashed-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('font/SansitaSwashed-Bold.woff2') format('woff2'),
+        url('font/SansitaSwashed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('font/SansitaSwashed-Black.woff2') format('woff2'),
+        url('font/SansitaSwashed-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('font/SansitaSwashed-Medium.woff2') format('woff2'),
+        url('font/SansitaSwashed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('font/SansitaSwashed-Regular.woff2') format('woff2'),
+        url('font/SansitaSwashed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('font/SansitaSwashed-SemiBold.woff2') format('woff2'),
+        url('font/SansitaSwashed-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('font/SansitaSwashed-Light.woff2') format('woff2'),
+        url('font/SansitaSwashed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+//function + mixin
+@function shadow-string($color1, $color2, $length){
+    $total-length: $length;
+    $string: $color1 0px 0px;
+    @while $length > 0 {
+      $mix-amount: 100 - (($length / $total-length) * 100);
+      $mixed-color: mix($color1,$color2, $mix-amount);
+      $string-addition: $length+px $length+px;
+      $string: $mixed-color $string-addition, $string;
+      $length: $length - 1;  
+    }
+    @return $string
+  }
+  
+  @mixin longshadow($color1, $color2, $length) {  
+    text-shadow: shadow-string($color1, $color2, $length);    
+  }
+
+  .blockCenter{
+    margin: 0 auto;
+  }
+
+  .border-blur{
+    position: relative;
+    display: block;
+  }
+  .border-blur:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 7px 2px #7dfb6c;
+    border: 0.2px solid rgb(255, 255, 255);
+  }
+  .border-blur2{
+    position: relative;
+    display: block;
+  }
+  .border-blur2:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 7px 2px #45e4ce;
+    border: 0.2px solid rgb(255, 255, 255);
+  }
+
+.backgroundMain{
+    max-width: 600px;
+    background-image: url("assets/background.png");
+    background-position: fixed; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size:contain;
+    // @media (min-width: 600px) {
+    //     background-size: 600px;
+    // }
+    background-attachment: fixed;
+}
+
+.bg2{
+    box-shadow:  0 0 7px 2px #45e4ce;
+}
+.bg{
+    box-shadow:  0 0 7px 2px #7dfb6c;
+}
+.bg-green{
+    border-radius: 100px;
+}
+a:link {
+    text-decoration: none;
+  }
+.content{
+    
+    margin: 0 auto;
+    max-width: 600px;
+    h3{
+        font-size: 0.9rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    &-background{
+        margin: 0 auto;
+    }
+}
+.content1{
+    text-align: center;
+    align-items: center;
+    .info{
+        width: 62%;
+        transform: translateY(12%);
+    }
+    .fanpage{
+        padding: 6% 9%;
+        background-color: #d3ffee;
+        svg{
+            width: 1.5rem;
+            background-color: white;
+            border-radius: 50%;
+        }
+        a{
+            font-family: 'Sansita Swashed';
+            font-weight: bolder;
+            font-size: 16px;
+            text-decoration: none;
+            color: rgb(15, 105, 27);
+        }
+        // p{
+        //     font-family: 'Sansita Swashed';
+        //     font-weight: bolder;
+        //     font-size: 16px;
+        //     text-decoration: none;
+        //     color: rgb(15, 105, 27);
+        // }
+        p{
+            font-family: 'Sansita Swashed';
+            align-items: center;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1rem;
+            text-decoration: none;
+            color: rgb(15, 105, 27);
+            margin: 0;
+        }
+        // p{
+        //     font-family: 'Sansita Swashed';
+        //     font-weight: bolder;
+        //     font-size: 16px;
+        //     text-decoration: none;
+        //     color: rgb(15, 105, 27);
+        // }
+        // p{
+        //     font-family: 'Sansita Swashed';
+        //     align-items: center;
+        //     text-align: center;
+        //     font-weight: bolder;
+        //     font-size: 16px;
+        //     text-decoration: none;
+        //     color: rgb(15, 105, 27);
+        //     margin: 0;
+        // }
+        h4{
+            font-size: 12px;
+            font-weight: 900;
+            color: black;
+            margin-bottom: 4px;
+        }
+        h5{
+            font-size: 11.5px;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+    }
+    &-title{
+
+        margin-bottom: -8%;
+    }
+    .click{
+        margin-top: -40%;
+        margin-left: 25%;
+        width: 50%;
+        transform: rotate(20deg);
+    }
+    &-cover{
+        width: 85%;
+        color: red;
+        margin: 0 auto;
+        background-color: white;
+        border: 4px solid rgb(0, 0, 0);
+        border-radius: 40px;
+        overflow: hidden;
+        font-family: 'Saira', sans-serif;
+        // text-decoration: underline;
+        font-weight: 900;
+    }
+    &-main{
+        margin: 0 auto;
+        .mgr{
+            transform: translateX(-10%);
+            // transform: translateY(-10%);
+        }
+    }
+    
+}
+
+.content2{
+    .arrow2{
+        width: 10%;
+        margin-top: -17%;
+    }
+    .marginOn2{
+        margin-top: -6%;
+        max-width: 45%;
+    }
+    .border-blur:after {
+        border: 0.2px solid rgb(255, 255, 255);
+    }
+    .fanpage{
+        font-family: 'Sansita Swashed';
+        padding: 4% 4%;
+        text-align: center;
+        background-color: #d3ffee;
+        svg{
+            width: 30px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        img{
+            width: 30px;
+            background-color: white;
+        }
+        a{
+            align-items: center;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1rem;
+            text-decoration: none;
+            color: rgb(15, 105, 27);
+            margin: 0;
+        }
+        p{
+            align-items: center;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1rem;
+            text-decoration: none;
+            color: rgb(15, 105, 27);
+            margin: 0;
+        }
+        h4{
+            text-align: center;
+            color: black;
+            font-weight: 900;
+            font-size: 1em;
+        }
+        img{
+            z-index: 2;
+            border-radius: 50%;
+        }
+        
+        .backgroundCall{
+            padding: 0rem 0.6rem 0rem 2rem;
+            margin-left: -13%;
+            z-index: 0;
+            background-image: url("assets/bgGif.gif");
+            background-position: center; /* Center the image */
+            background-repeat: repeat; /* Do not repeat the image */
+            background-size: cover;
+            border-radius: 100px;
+        }
+    }
+    .minW{
+        max-width: 150px;
+    }
+    &-title{
+
+        margin-bottom: -8%;
+    }
+    .click{
+        margin-top: -8%;
+        margin-left: 12%;
+        width: 12%;
+        transform: rotate(-80deg);
+    }
+    .click3{
+        margin-top: -5%;
+        // margin-left: 0%;
+        width: 16%;
+        transform: rotate(-60deg);
+    }
+    .click2{
+        margin-top: -20.5%;
+        margin-left: 1%;
+        width: 37%;
+    }
+    &-cover{
+        
+        width: 100%;
+        color: red;
+        margin: 0 auto;
+        background-color: white;
+        border: 4px solid rgb(0, 0, 0);
+        border-radius: 20px;
+        overflow: hidden;
+        a{
+            font-family: 'Sansita Swashed';
+            align-items: center;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(15, 105, 27);
+        }
+        h3{
+            font-weight: 900;
+            font-size: 1.2em;
+        }
+    }
+    &-main{
+        margin: 0 auto;
+        .mgr{
+            transform: translateX(10%);
+        }
+    }
+    
+}
+
+
+.marginOn{
+    margin-top: -28%;
+}
+.marginOn2{
+    margin-top: -20%;
+}
+
+.clickhere{
+    padding: 2% 2%;
+    background-color: red;
+    font-weight: bolder;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    a{
+        background-color: none;
+        font-size: 15px;
+        text-decoration: none;
+        color: white;
+        @include longshadow(rgb(146, 0, 0), rgb(146, 0, 0), 200);
+    }
+}
+
