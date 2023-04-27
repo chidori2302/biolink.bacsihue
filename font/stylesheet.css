@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('SansitaSwashed-ExtraBold.woff2') format('woff2'),
+        url('SansitaSwashed-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('SansitaSwashed-Bold.woff2') format('woff2'),
+        url('SansitaSwashed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('SansitaSwashed-Black.woff2') format('woff2'),
+        url('SansitaSwashed-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('SansitaSwashed-Medium.woff2') format('woff2'),
+        url('SansitaSwashed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('SansitaSwashed-Regular.woff2') format('woff2'),
+        url('SansitaSwashed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('SansitaSwashed-SemiBold.woff2') format('woff2'),
+        url('SansitaSwashed-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('SansitaSwashed-Light.woff2') format('woff2'),
+        url('SansitaSwashed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

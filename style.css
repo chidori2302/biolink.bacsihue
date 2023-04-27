@@ -1,0 +1,336 @@
+@font-face {
+  font-family: "Sansita Swashed";
+  src: url("font/SansitaSwashed-ExtraBold.woff2") format("woff2"), url("font/SansitaSwashed-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sansita Swashed";
+  src: url("font/SansitaSwashed-Bold.woff2") format("woff2"), url("font/SansitaSwashed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sansita Swashed";
+  src: url("font/SansitaSwashed-Black.woff2") format("woff2"), url("font/SansitaSwashed-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sansita Swashed";
+  src: url("font/SansitaSwashed-Medium.woff2") format("woff2"), url("font/SansitaSwashed-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sansita Swashed";
+  src: url("font/SansitaSwashed-Regular.woff2") format("woff2"), url("font/SansitaSwashed-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sansita Swashed";
+  src: url("font/SansitaSwashed-SemiBold.woff2") format("woff2"), url("font/SansitaSwashed-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sansita Swashed";
+  src: url("font/SansitaSwashed-Light.woff2") format("woff2"), url("font/SansitaSwashed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+.blockCenter {
+  margin: 0 auto;
+}
+
+.border-blur {
+  position: relative;
+  display: block;
+}
+
+.border-blur:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 7px 2px #7dfb6c;
+  border: 0.2px solid rgb(255, 255, 255);
+}
+
+.border-blur2 {
+  position: relative;
+  display: block;
+}
+
+.border-blur2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 7px 2px #45e4ce;
+  border: 0.2px solid rgb(255, 255, 255);
+}
+
+.backgroundMain {
+  max-width: 600px;
+  background-image: url("assets/background.png");
+  background-position: fixed; /* Center the image */
+  background-repeat: repeat; /* Do not repeat the image */
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.bg2 {
+  box-shadow: 0 0 7px 2px #45e4ce;
+}
+
+.bg {
+  box-shadow: 0 0 7px 2px #7dfb6c;
+}
+
+.bg-green {
+  border-radius: 100px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.content h3 {
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: bold;
+}
+.content-background {
+  margin: 0 auto;
+}
+
+.content1 {
+  text-align: center;
+  align-items: center;
+}
+.content1 .info {
+  width: 62%;
+  transform: translateY(12%);
+}
+.content1 .fanpage {
+  padding: 6% 9%;
+  background-color: #d3ffee;
+}
+.content1 .fanpage svg {
+  width: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+}
+.content1 .fanpage a {
+  font-family: "Sansita Swashed";
+  font-weight: bolder;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(15, 105, 27);
+}
+.content1 .fanpage p {
+  font-family: "Sansita Swashed";
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(15, 105, 27);
+  margin: 0;
+}
+.content1 .fanpage h4 {
+  font-size: 12px;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 4px;
+}
+.content1 .fanpage h5 {
+  font-size: 11.5px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.content1-title {
+  margin-bottom: -8%;
+}
+.content1 .click {
+  margin-top: -40%;
+  margin-left: 25%;
+  width: 50%;
+  transform: rotate(20deg);
+}
+.content1-cover {
+  width: 85%;
+  color: red;
+  margin: 0 auto;
+  background-color: white;
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 40px;
+  overflow: hidden;
+  font-family: "Saira", sans-serif;
+  font-weight: 900;
+}
+.content1-main {
+  margin: 0 auto;
+}
+.content1-main .mgr {
+  transform: translateX(-10%);
+}
+
+.content2 .arrow2 {
+  width: 10%;
+  margin-top: -17%;
+}
+.content2 .marginOn2 {
+  margin-top: -6%;
+  max-width: 45%;
+}
+.content2 .border-blur:after {
+  border: 0.2px solid rgb(255, 255, 255);
+}
+.content2 .fanpage {
+  font-family: "Sansita Swashed";
+  padding: 4% 4%;
+  text-align: center;
+  background-color: #d3ffee;
+}
+.content2 .fanpage svg {
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+.content2 .fanpage img {
+  width: 30px;
+  background-color: white;
+}
+.content2 .fanpage a {
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(15, 105, 27);
+  margin: 0;
+}
+.content2 .fanpage p {
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(15, 105, 27);
+  margin: 0;
+}
+.content2 .fanpage h4 {
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  font-size: 1em;
+}
+.content2 .fanpage img {
+  z-index: 2;
+  border-radius: 50%;
+}
+.content2 .fanpage .backgroundCall {
+  padding: 0rem 0.6rem 0rem 2rem;
+  margin-left: -13%;
+  z-index: 0;
+  background-image: url("assets/bgGif.gif");
+  background-position: center; /* Center the image */
+  background-repeat: repeat; /* Do not repeat the image */
+  background-size: cover;
+  border-radius: 100px;
+}
+.content2 .minW {
+  max-width: 150px;
+}
+.content2-title {
+  margin-bottom: -8%;
+}
+.content2 .click {
+  margin-top: -8%;
+  margin-left: 12%;
+  width: 12%;
+  transform: rotate(-80deg);
+}
+.content2 .click3 {
+  margin-top: -5%;
+  width: 16%;
+  transform: rotate(-60deg);
+}
+.content2 .click2 {
+  margin-top: -20.5%;
+  margin-left: 1%;
+  width: 37%;
+}
+.content2-cover {
+  width: 100%;
+  color: red;
+  margin: 0 auto;
+  background-color: white;
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.content2-cover a {
+  font-family: "Sansita Swashed";
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(15, 105, 27);
+}
+.content2-cover h3 {
+  font-weight: 900;
+  font-size: 1.2em;
+}
+.content2-main {
+  margin: 0 auto;
+}
+.content2-main .mgr {
+  transform: translateX(10%);
+}
+
+.marginOn {
+  margin-top: -28%;
+}
+
+.marginOn2 {
+  margin-top: -20%;
+}
+
+.clickhere {
+  padding: 2% 2%;
+  background-color: red;
+  font-weight: bolder;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.clickhere a {
+  background-color: none;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  text-shadow: #920000 1px 1px, #920000 2px 2px, #920000 3px 3px, #920000 4px 4px, #920000 5px 5px, #920000 6px 6px, #920000 7px 7px, #920000 8px 8px, #920000 9px 9px, #920000 10px 10px, #920000 11px 11px, #920000 12px 12px, #920000 13px 13px, #920000 14px 14px, #920000 15px 15px, #920000 16px 16px, #920000 17px 17px, #920000 18px 18px, #920000 19px 19px, #920000 20px 20px, #920000 21px 21px, #920000 22px 22px, #920000 23px 23px, #920000 24px 24px, #920000 25px 25px, #920000 26px 26px, #920000 27px 27px, #920000 28px 28px, #920000 29px 29px, #920000 30px 30px, #920000 31px 31px, #920000 32px 32px, #920000 33px 33px, #920000 34px 34px, #920000 35px 35px, #920000 36px 36px, #920000 37px 37px, #920000 38px 38px, #920000 39px 39px, #920000 40px 40px, #920000 41px 41px, #920000 42px 42px, #920000 43px 43px, #920000 44px 44px, #920000 45px 45px, #920000 46px 46px, #920000 47px 47px, #920000 48px 48px, #920000 49px 49px, #920000 50px 50px, #920000 51px 51px, #920000 52px 52px, #920000 53px 53px, #920000 54px 54px, #920000 55px 55px, #920000 56px 56px, #920000 57px 57px, #920000 58px 58px, #920000 59px 59px, #920000 60px 60px, #920000 61px 61px, #920000 62px 62px, #920000 63px 63px, #920000 64px 64px, #920000 65px 65px, #920000 66px 66px, #920000 67px 67px, #920000 68px 68px, #920000 69px 69px, #920000 70px 70px, #920000 71px 71px, #920000 72px 72px, #920000 73px 73px, #920000 74px 74px, #920000 75px 75px, #920000 76px 76px, #920000 77px 77px, #920000 78px 78px, #920000 79px 79px, #920000 80px 80px, #920000 81px 81px, #920000 82px 82px, #920000 83px 83px, #920000 84px 84px, #920000 85px 85px, #920000 86px 86px, #920000 87px 87px, #920000 88px 88px, #920000 89px 89px, #920000 90px 90px, #920000 91px 91px, #920000 92px 92px, #920000 93px 93px, #920000 94px 94px, #920000 95px 95px, #920000 96px 96px, #920000 97px 97px, #920000 98px 98px, #920000 99px 99px, #920000 100px 100px, #920000 101px 101px, #920000 102px 102px, #920000 103px 103px, #920000 104px 104px, #920000 105px 105px, #920000 106px 106px, #920000 107px 107px, #920000 108px 108px, #920000 109px 109px, #920000 110px 110px, #920000 111px 111px, #920000 112px 112px, #920000 113px 113px, #920000 114px 114px, #920000 115px 115px, #920000 116px 116px, #920000 117px 117px, #920000 118px 118px, #920000 119px 119px, #920000 120px 120px, #920000 121px 121px, #920000 122px 122px, #920000 123px 123px, #920000 124px 124px, #920000 125px 125px, #920000 126px 126px, #920000 127px 127px, #920000 128px 128px, #920000 129px 129px, #920000 130px 130px, #920000 131px 131px, #920000 132px 132px, #920000 133px 133px, #920000 134px 134px, #920000 135px 135px, #920000 136px 136px, #920000 137px 137px, #920000 138px 138px, #920000 139px 139px, #920000 140px 140px, #920000 141px 141px, #920000 142px 142px, #920000 143px 143px, #920000 144px 144px, #920000 145px 145px, #920000 146px 146px, #920000 147px 147px, #920000 148px 148px, #920000 149px 149px, #920000 150px 150px, #920000 151px 151px, #920000 152px 152px, #920000 153px 153px, #920000 154px 154px, #920000 155px 155px, #920000 156px 156px, #920000 157px 157px, #920000 158px 158px, #920000 159px 159px, #920000 160px 160px, #920000 161px 161px, #920000 162px 162px, #920000 163px 163px, #920000 164px 164px, #920000 165px 165px, #920000 166px 166px, #920000 167px 167px, #920000 168px 168px, #920000 169px 169px, #920000 170px 170px, #920000 171px 171px, #920000 172px 172px, #920000 173px 173px, #920000 174px 174px, #920000 175px 175px, #920000 176px 176px, #920000 177px 177px, #920000 178px 178px, #920000 179px 179px, #920000 180px 180px, #920000 181px 181px, #920000 182px 182px, #920000 183px 183px, #920000 184px 184px, #920000 185px 185px, #920000 186px 186px, #920000 187px 187px, #920000 188px 188px, #920000 189px 189px, #920000 190px 190px, #920000 191px 191px, #920000 192px 192px, #920000 193px 193px, #920000 194px 194px, #920000 195px 195px, #920000 196px 196px, #920000 197px 197px, #920000 198px 198px, #920000 199px 199px, #920000 200px 200px, rgb(146, 0, 0) 0px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
