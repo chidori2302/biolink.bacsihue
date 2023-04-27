@@ -115,14 +115,15 @@
   }
 
 .backgroundMain{
-    max-width: 600px;
+    // max-width: 600px;
     background-image: url("assets/background.png");
     background-position: fixed; /* Center the image */
     background-repeat: repeat; /* Do not repeat the image */
     background-size:contain;
-    // @media (min-width: 600px) {
-    //     background-size: 600px;
-    // }
+    @media (min-width: 600px) {
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat;
+    }
     background-attachment: fixed;
 }
 
@@ -253,8 +254,14 @@ a:link {
 
 .content2{
     .arrow2{
-        width: 10%;
-        margin-top: -17%;
+        width: 3rem;
+        
+        @media (min-width: 600px) {
+            margin-top: -10%;
+        }
+        @media (min-width: 1200px) {
+            margin-top: -5%;
+        }
     }
     .marginOn2{
         margin-top: -6%;
