@@ -201,9 +201,9 @@ a:link {
 .content2 .arrow2 {
   width: 3rem;
 }
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .content2 .arrow2 {
-    margin-top: -10%;
+    margin-top: -15%;
   }
 }
 @media (min-width: 1200px) {
